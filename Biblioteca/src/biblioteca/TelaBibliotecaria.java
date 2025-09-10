@@ -3,6 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package biblioteca;
+import javax.swing.JOptionPane;
+
 
 /**
  *
@@ -43,9 +45,19 @@ public class TelaBibliotecaria extends javax.swing.JFrame {
 
         bntCadastrarLivro.setText("CADASTRAR LIVRO");
         bntCadastrarLivro.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bntCadastrarLivro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntCadastrarLivroActionPerformed(evt);
+            }
+        });
 
         bntConsultarLivro.setText("CONSULTAR LIVRO");
         bntConsultarLivro.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bntConsultarLivro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntConsultarLivroActionPerformed(evt);
+            }
+        });
 
         btnEmprestimoDevolucao.setText("REGISTRAR EMPRESTIMO\\DEVOLUÇÃO");
         btnEmprestimoDevolucao.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -90,13 +102,25 @@ public class TelaBibliotecaria extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnEmprestimoDevolucaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEmprestimoDevolucaoActionPerformed
-        // Colocar o código do botão
+      JOptionPane.showMessageDialog(this, "Você clicou em registrar Devolução/emprestimo!");
+      // Colocar o código do botão
     }//GEN-LAST:event_btnEmprestimoDevolucaoActionPerformed
 
     private void bntCadastrarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntCadastrarUsuarioActionPerformed
         // Colocar o código do botão
-        JOoptionPane.showMessageDialog(this, "Você clicou em cadastrar Livro");
+    JOptionPane.showMessageDialog(this, "Você clicou em Cadastrar Usuário!");
+    
     }//GEN-LAST:event_bntCadastrarUsuarioActionPerformed
+
+    private void bntCadastrarLivroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntCadastrarLivroActionPerformed
+JOptionPane.showMessageDialog(this, "Você clicou em Cadastrar Livro!");        
+// TODO add your handling code here:
+    }//GEN-LAST:event_bntCadastrarLivroActionPerformed
+
+    private void bntConsultarLivroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntConsultarLivroActionPerformed
+JOptionPane.showMessageDialog(this, "Você clicou em Consultar Livro!");        
+// TODO add your handling code here:
+    }//GEN-LAST:event_bntConsultarLivroActionPerformed
 
     /**
      * @param args the command line arguments
